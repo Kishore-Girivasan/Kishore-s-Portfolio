@@ -1,56 +1,85 @@
-.about-container{
+.about-container {
     padding: 80px 10%;
     min-height: 100vh;
     display: flex;
     text-align: left;
     flex-direction: column;
     align-items: flex-start;
+    /* Background set to your primary navy */
+    background-color: var(--primary-navy);
 }
 
-.about-header h1{
+.about-header h1 {
     font-size: 2.5rem;
     margin-bottom: 50px;
     letter-spacing: 2px;
+    /* Headings in Light Gray */
+    color: var(--light-gray);
+    position: relative;
 }
 
-.about-content{
+/* Optional: Adding an orange underline to the header to match your brand */
+.about-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-orange);
+}
+
+.about-content {
     display: flex;
     align-items: flex-start;
     gap: 50px;
 }
 
-.image-container img{
+.image-container img {
     width: 300px;
     height: 320px;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 15px; /* Softer radius matches modern UI */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--soft-orange); /* Subtle frame for the photo */
 }
 
-.about-text{
+.about-text {
     flex: 1;
 }
 
-.about-text h3{
+.about-text h3 {
     font-size: 1.8rem;
     margin-top: 0px;
     margin-bottom: 20px;
+    /* The "Hook" text in your main Accent Orange */
+    color: var(--accent-orange);
 }
 
-.about-text p{
+.about-text p {
     line-height: 1.8;
-    font-size: 1.1rem;;
+    font-size: 1.1rem;
+    /* Body text in Light Gray */
+    color: var(--light-gray);
+    opacity: 0.9;
 }
 
-.icon-column{
+.icon-column {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-.icon-column a{
-    color: black;
+.icon-column a {
+    /* Social icons in Soft Orange */
+    color: var(--soft-orange);
     font-size: 2rem;
     display: flex;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-column a:hover {
+    color: var(--accent-orange);
+    transform: translateY(-5px);
 }

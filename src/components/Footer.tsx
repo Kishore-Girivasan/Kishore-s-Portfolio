@@ -1,12 +1,15 @@
-import '../styles/Footer.css'
+import '../styles/Footer.css';
 
-function Footer(){
-    return(
-        <div className="footer-container">
-            <h1>Kishore's Portfolio</h1>
-            <h3>2026. All Rights Reserved</h3>
-        </div>
+function Footer() {
+    const currentYear = new Date().getFullYear();
+    
+    return (
+        <footer id="contact" className="footer-container">
+            <h1>KISHORE G.</h1>
+            <h3>Full Stack Engineer | React • TypeScript • Ruby on Rails</h3>
+            <h3>© {currentYear} | Built with passion.</h3>
+        </footer>
     );
 }
 
-export default Footer
+export default Footer;

@@ -2,6 +2,8 @@
     padding: 60px 10%;
     min-height: 40vh;
     text-align: left;
+    /* Use global Navy variable */
+    background-color: var(--primary-navy);
 }
 
 .education-header h1 {
@@ -10,17 +12,25 @@
     margin-bottom: 30px;
     display: inline-block;
     padding-bottom: 5px;
-    color: black;
+    /* Orange underline to match other sections */
+    border-bottom: 4px solid var(--accent-orange);
+    color: var(--light-gray);
 }
 
 .education-item {
     display: flex;
-    align-items: center; /* Vertically centers logo with text */
+    align-items: center; 
     gap: 30px;
-    background-color: #94a3b8; /* Darker gray "bubble" from the image */
+    /* Switched to the Light Gray palette color */
+    background-color: var(--light-gray); 
     padding: 30px 40px;
-    border-radius: 25px; /* Large rounded corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 25px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
 }
 
 /* Logo Styling */
@@ -31,31 +41,35 @@
     padding: 10px;
     border-radius: 15px;
     object-fit: contain;
+    border: 1px solid #d1d1d1;
 }
 
 .education-item-content {
-    flex: 1; /* Takes up all remaining horizontal space */
+    flex: 1; 
 }
 
-/* Row for Degree Title and Date */
+/* Degree Title and Date */
 .education-item-content h2 {
     display: flex;
-    justify-content: space-between; /* Pushes the <span> date to the right */
+    justify-content: space-between; 
     align-items: center;
     margin: 0;
     font-size: 1.4rem;
-    color: #1a202c;
+    /* Navy text for high contrast on light card */
+    color: var(--primary-navy);
 }
 
+/* The Date range in Orange */
 .education-item-content h2 span {
     font-size: 1rem;
-    font-weight: normal;
-    color: #2d3748;
+    font-weight: 600;
+    color: var(--accent-orange);
 }
 
+/* University Name */
 .education-item-content h5 {
     margin: 8px 0 0 0;
     font-size: 1.1rem;
-    color: #4a5568;
+    color: #4a5568; /* Dark grey for secondary info */
     font-weight: 500;
 }

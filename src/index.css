@@ -1,11 +1,14 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Your Brand Palette */
+  --primary-navy: #001F3D;    /* Deep Background */
+  --accent-orange: #ED985F;   /* Primary Action/Highlights */
+  --soft-orange: #F7B980;     /* Hover states/Icons */
+  --light-gray: #E6E6E6;      /* Card backgrounds & text */
+
+  /* Typography Defaults */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,16 +16,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Force your theme globally */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center; /* Helpful for Hero centering */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--primary-navy);
+  color: var(--light-gray);
+}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#root {
+  width: 100%; /* Ensures components stretch properly */
+}
+
+/* Standard Link Defaults */
+a {
+  font-weight: 500;
+  color: var(--soft-orange);
+  text-decoration: inherit;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: var(--accent-orange);
 }

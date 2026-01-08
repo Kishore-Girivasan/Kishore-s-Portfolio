@@ -1,19 +1,19 @@
 import '../styles/NavBar.css';
-function NavBar(){
-    return(
-        <div className="nav-bar">
-            <h2>Kishore G</h2>
+
+function NavBar() {
+    return (
+        <nav className="nav-bar">
+            <h2>KISHORE G.</h2>
             <div className="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About me</a>
-                <a href="#">Experience</a>
-                <a href="#">Education</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
-        
+        </nav>
     );
 }
 
-export default NavBar
+export default NavBar;

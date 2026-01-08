@@ -1,9 +1,76 @@
 .skills-container {
     padding: 80px 10%;
     text-align: left;
+    /* Use global Navy variable */
+    background-color: var(--primary-navy);
+    min-height: 60vh;
 }
 
 .skills-header h1 {
     font-size: 2.5rem;
     margin-bottom: 5px;
+    color: var(--light-gray);
+    text-transform: uppercase;
+    /* Orange underline to match other sections */
+    border-bottom: 4px solid var(--accent-orange);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* The Single Card Background */
+.skills-content {
+    margin-top: 40px;
+}
+
+.skills-single-card {
+    background-color: var(--light-gray);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+}
+
+/* Category Title (e.g., Technical Proficiency) */
+.skills-single-card h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: var(--primary-navy);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Bullets Styling */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    /* Dark text for contrast on light gray card */
+    color: #2d3748;
+}
+
+/* Custom Orange Bullet Point */
+.skills-list li::before {
+    content: "•"; 
+    color: var(--accent-orange);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+/* Bold Category Names (e.g., Languages:) */
+.skills-list li strong {
+    color: var(--primary-navy);
+    margin-right: 5px;
+    font-weight: 700;
 }

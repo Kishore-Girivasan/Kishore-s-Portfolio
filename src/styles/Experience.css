@@ -1,6 +1,8 @@
 .experience-container {
     padding: 80px 10%;
-    color: white;
+    /* Use global Navy variable for the section background */
+    background-color: var(--primary-navy);
+    color: var(--light-gray);
     min-height: 100vh;
     text-align: left;
 }
@@ -9,10 +11,11 @@
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 30px;
-    border-bottom: 4px solid white; 
+    /* Orange underline to match brand */
+    border-bottom: 4px solid var(--accent-orange); 
     display: inline-block;
     padding-bottom: 5px;
-    color: #000;
+    color: var(--light-gray);
 }
 
 .experience-content {
@@ -21,15 +24,21 @@
     gap: 30px;
 }
 
-/* The Grey Card Background */
+/* The Card: Switched to Light Gray background */
 .experience-item {
     display: flex;
     align-items: flex-start;
     gap: 30px;
-    background-color: #2d3748; /* Lighter grey card */
+    background-color: var(--light-gray); 
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    /* Soft shadow for depth */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
 }
 
 /* Logo Styling */
@@ -40,37 +49,52 @@
     padding: 10px;
     border-radius: 15px;
     object-fit: contain;
+    /* Subtle border to define logo against light gray card */
+    border: 1px solid #d1d1d1;
 }
 
 .experience-item-content {
     flex: 1;
 }
 
+/* Company Name: Navy for contrast on light card */
 .experience-item-content h2 {
     margin: 0;
     font-size: 1.8rem;
+    color: var(--primary-navy);
 }
 
+/* Location Text */
 .experience-item-content h5 {
     margin: 5px 0 20px 0;
-    color: #cbd5e0;
-    font-weight: 400;
+    color: #4a5568; /* Darker gray for readability */
+    font-weight: 500;
 }
 
-/* Flex row for Title and Date */
+/* Flex row for Job Title and Date */
 .experience-item-content h4 {
     display: flex;
-    justify-content: space-between; /* Pushes date to the right */
+    justify-content: space-between; 
     align-items: center;
     margin-bottom: 15px;
     font-size: 1.1rem;
-    color: #edf2f7;
+    /* Navy for Job Title */
+    color: var(--primary-navy);
+    font-weight: 700;
 }
 
+/* The Date range in Orange */
+.experience-item-content h4 span {
+    color: var(--accent-orange);
+    font-weight: 600;
+}
+
+/* Bullet Points styling */
 .experience-item-content ul {
     margin: 0;
     padding-left: 20px;
-    color: #cbd5e0;
+    /* Dark navy/gray text for bullets on light card */
+    color: #2d3748; 
 }
 
 .experience-item-content li {

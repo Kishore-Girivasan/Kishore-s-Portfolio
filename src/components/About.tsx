@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function About(){
     return(
-        <div className="about-container">
+        <div id="about" className="about-container">
             <div className='about-header'>
                 <h1>About Me</h1>
             </div>
@@ -13,10 +13,10 @@ function About(){
                 <div className='image-container'><img src={Portfolio} alt="Profile"/></div>
                 <div className='about-text'>
                     <h3>
-                        Nice to meet you, this is Kishore—the person you are mostly looking for.
+                        Nice to meet you, I’m Kishore - the developer you’ve been looking for.
                     </h3>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni nostrum iure a quibusdam! Molestias ex repudiandae provident, corrupti quae consectetur nulla. Placeat sunt dolores distinctio est incidunt consectetur? Quo, at.
+                        I am a Full Stack Engineer with an Integrated M.Tech in Software Engineering from VIT Vellore. I have extensive experience building production web applications using React, TypeScript, and Ruby on Rails to deliver scalable technical solutions. My focus is on owning features end-to-end, from developing modular frontend components to integrating robust backend services.
                     </p>
                     <div className='icon-column'>
                         <a href="mailto:kishoregirivasan11@gmail.com" target='_blank' rel='noreferrer'><MdEmail /></a>

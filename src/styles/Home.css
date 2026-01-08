@@ -1,4 +1,4 @@
-.home-container{
+.home-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -6,32 +6,52 @@
     text-align: left;
     min-height: 100vh;
     box-sizing: border-box;
+    /* Use global Navy variable */
+    background-color: var(--primary-navy);
+    padding: 0 10%; 
 }
 
-.home-container h3{
+.home-container h3 {
     margin-bottom: 0px;
     font-size: 2rem;
+    /* Soft Gray for the "Hello" text */
+    color: var(--light-gray);
 }
 
-.home-container h1{
+.home-container h1 {
     font-size: 4.5rem;
     margin: 0 0;
     text-transform: uppercase;
+    /* Main Accent Orange for your Name */
+    color: var(--accent-orange);
 }
 
-.home-container p{
+.home-container p {
     max-width: 600px;
     line-height: 1.6;
     margin-bottom: 30px;
+    /* Lighter Gray for readability */
+    color: var(--light-gray);
+    opacity: 0.9;
 }
 
-.home-container button{
+.home-container button {
     padding: 12px 30px;
-    border: none;
     border-radius: 12px;
     font-size: 1rem;
     cursor: pointer;
     border-width: 2px;
     border-style: solid;
-    border-color: black;
+    /* Button styling using your palette */
+    border-color: var(--accent-orange);
+    background-color: transparent;
+    color: var(--accent-orange);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.home-container button:hover {
+    background-color: var(--accent-orange);
+    color: var(--primary-navy);
+    transform: translateY(-2px);
 }
