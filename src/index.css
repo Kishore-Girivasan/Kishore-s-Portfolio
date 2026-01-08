@@ -43,3 +43,7 @@ a {
 a:hover {
   color: var(--accent-orange);
 }
+
+html {
+  scroll-behavior: smooth;
+}
