@@ -1,0 +1,61 @@
+.education-container {
+    padding: 60px 10%;
+    min-height: 40vh;
+    text-align: left;
+}
+
+.education-header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.education-item {
+    display: flex;
+    align-items: center; /* Vertically centers logo with text */
+    gap: 30px;
+    background-color: #94a3b8; /* Darker gray "bubble" from the image */
+    padding: 30px 40px;
+    border-radius: 25px; /* Large rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Logo Styling */
+.education-item img {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.education-item-content {
+    flex: 1; /* Takes up all remaining horizontal space */
+}
+
+/* Row for Degree Title and Date */
+.education-item-content h2 {
+    display: flex;
+    justify-content: space-between; /* Pushes the <span> date to the right */
+    align-items: center;
+    margin: 0;
+    font-size: 1.4rem;
+    color: #1a202c;
+}
+
+.education-item-content h2 span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #2d3748;
+}
+
+.education-item-content h5 {
+    margin: 8px 0 0 0;
+    font-size: 1.1rem;
+    color: #4a5568;
+    font-weight: 500;
+}

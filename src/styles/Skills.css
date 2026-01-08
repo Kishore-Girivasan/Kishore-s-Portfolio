@@ -1,0 +1,9 @@
+.skills-container {
+    padding: 80px 10%;
+    text-align: left;
+}
+
+.skills-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
