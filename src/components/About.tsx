@@ -1,5 +1,5 @@
 import '../styles/About.css'
-import Portfolio from '../assets/images/portfolio-img.jpeg'
+import Portfolio from '../assets/images/Portfolio-img.jpeg';
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
